@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="resumes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ddc-material-master/26.Resumes/resumes.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
