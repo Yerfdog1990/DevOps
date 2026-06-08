@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/godfrey/IdeaProjects/DevOps/ddc-material-master/12.BashScripting/scriptingVMs/WindowsAndMacIntel","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

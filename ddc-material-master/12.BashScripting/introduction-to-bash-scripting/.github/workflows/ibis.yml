@@ -1,0 +1,29 @@
+name: Build eBooks
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build eBooks with Ibis Next
+        uses: bobbyiliev/ibis-build-action@v2.0.0
+        with:
+          ibis_path: "./ebook/en"
+          ibis_branch: "main"
+          email: "bobby@bobbyiliev.com"
+          commit_message: "📚 Updated eBook files"
+          php_version: "8.2"
+          formats: "pdf,pdf-dark,epub,sample,sample-dark"
+          skip_push: "false"
